@@ -4,7 +4,7 @@
 /**
 *main - Entry point
 *Discription: 'Check for number if it is positive_or_negative'
-*Return : always 0
+*return : always 0
 */
 int main(void)
 {
