@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - Entry point
-*Discription: 'Check for number if it is positive_or_negative'
-*return : always 0
-*/
+ *main - Entry point
+ *Discription: 'Check for number if it is positive_or_negative'
+ *return : always 0
+ */
 int main(void)
 {
 int n;
