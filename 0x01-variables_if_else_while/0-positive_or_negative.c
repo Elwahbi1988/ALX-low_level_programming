@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
- *more headers goes there
- *description: use if ,else if , else
- *he number, followed by
- *if the number is greater than 0: is positive
- *if the number is 0: is zero
- *if the number is less than 0: is negative
- *Betty style doc for function main goes there
- */
+/**
+*main - Entry point
+*Discription: 'Check for number if it is positive_or_negative'
+*Return : always 0
+*/
 int main(void)
 {
 int n;
