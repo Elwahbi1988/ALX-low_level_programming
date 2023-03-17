@@ -4,6 +4,10 @@
 /*
  *more headers goes there
  *description: use if ,else if , else
+ *he number, followed by
+ *if the number is greater than 0: is positive
+ *if the number is 0: is zero
+ *if the number is less than 0: is negative
  *Betty style doc for function main goes there
  */
 int main(void)
