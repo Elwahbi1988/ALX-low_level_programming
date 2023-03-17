@@ -1,10 +1,11 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- *main - Entry point
- *Discription: 'Check for number if it is positive_or_negative'
- *return : always 0
+ *main - assigns a random number to int n everytime
+ *
+ *description: 'Check for number if it is positive_or_negative'
+ *Return: Always 0 (Success)
  */
 int main(void)
 {
