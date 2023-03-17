@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/** more headers goes there */
-
-/* Betty style doc for function main goes there */
+/*
+ *more headers goes there
+ *description: use if ,else if , else
+ *Betty style doc for function main goes there
+ */
 int main(void)
 {
 int n;
