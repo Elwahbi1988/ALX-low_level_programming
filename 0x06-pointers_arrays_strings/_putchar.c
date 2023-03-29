@@ -1,11 +1,11 @@
-#inclure <unistd.h>
+#include <unistd.h>
 
 /**
-   * _putchar - écrit le caractère c en stdout
-    * @c : Le personnage à imprimer
+   * _putchar - writes the character c to stdout
+    * @c: The character to print
      *
-      * Retour: Sur le succès 1.
-       * En cas d’erreur, -1 est renvoyé et errno est défini de manière appropriée.
+      * Return: On success 1.
+       * On error, -1 is returned, and errno is set appropriately.
         */
 int _putchar(char c)
 {
