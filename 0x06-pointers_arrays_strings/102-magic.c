@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+* main -not even the comments
+* description: so that the program prints a[2] = 98.
+* Return: is always 0.
+ */
 
 int main(void)
 {
@@ -9,7 +14,7 @@ int *p;
 a[2] = 1024;
 p = &n;
 /*
-* write your line of code here...
+* write your line of code here..
 * Remember:
 * - you are not allowed to use a
 * - you are not allowed to modify p
