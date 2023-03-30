@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+* main -print magic.
+* description: that programe print a[2] = 98.
+* Return: always 0 (success)
+*/
 
 int main(void)
 {
