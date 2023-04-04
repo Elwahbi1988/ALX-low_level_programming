@@ -1,7 +1,7 @@
 #include "main.h"
-/*
-*_strbrk -entry point
-*Description:  fonction _strbrk entry point
+/**
+*_strpbrk -entry point
+*Description: '_strpbrk function'
 *@s: input
 *@accept: input
 *Return: always 0 (success)
