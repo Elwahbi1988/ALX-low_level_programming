@@ -55,6 +55,6 @@ return (1);
 count++;
 }
 /*print sum */
-printf("%d\n",sum);
+printf("%d\n", sum);
 return (0);
 }
