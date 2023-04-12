@@ -11,13 +11,11 @@
 void print_tab(char **tab)
 {
 int i;
-
 for (i = 0; tab[i] != NULL; ++i)
 {
 printf("%s\n", tab[i]);
 }
 }
-
 /**
 * main - check the code for ALX School students.
 *
@@ -26,7 +24,6 @@ printf("%s\n", tab[i]);
 int main(void)
 {
 char **tab;
-
 tab = strtow("      ALX School         #cisfun      ");
 if (tab == NULL)
 {
