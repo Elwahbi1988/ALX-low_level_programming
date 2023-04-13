@@ -13,7 +13,7 @@ int *ptr;
 int i, size;
 if (min > max)
 return (NULL);
-size = max - min +1;
+size = max - min + 1;
 ptr = malloc(sizeof(int) * size);
 if (ptr == NULL)
 return (NULL);
