@@ -16,14 +16,14 @@ i++;
 return (i);
 }
 /**
-**strcpy - copies the string pointed to by src
+**_strcpy - copies the string pointed to by src
 *including the termonating null byte(\0)
 *to the buffer pointed to by dest
 *@dest: pointer to the buffer in which we copy the string
 *@src: string to be copied
 *Return: the pointer to dest
 */
-char *strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 int len, i;
 len = 0;
@@ -35,7 +35,7 @@ for (i = 0; i < len; i++)
 {
 dest[i] = src[i];
 }
-dest[i] = '/0';
+dest[i] = '\0';
 return (dest);
 }
 /**
@@ -60,7 +60,7 @@ if (dog->name == NULL)
 free(dog);
 return (NULL);
 }
-idog->owner = malloc(sizeof(char) * (len2 + 1));
+dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (dog->owner == NULL)
 {
 free(dog);
