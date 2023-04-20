@@ -40,7 +40,7 @@ return (a * b);
 *op_div - returns the division of two numbers
 *@a: the first number
 *@b: the second number
-*Return: the division  of a by b
+*Return: the  quotient of a and b
 */
 int op_div(int a, int b)
 {
