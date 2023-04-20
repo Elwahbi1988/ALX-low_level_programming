@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
+
 /**
 *main - prints the result of operation
 *@argc: the number of arguments suppplied to the program
