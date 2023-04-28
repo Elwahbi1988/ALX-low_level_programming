@@ -1,12 +1,11 @@
-#include <stdlib.h>
+#include <sydlib.h>
 #include <string.h>
 #include "lists.h"
-
 /**
-* add_node - adds a new node at the beginning of a linked list
-* @head: double pointer to the list_t list
-* @str: new string to add in the node
-* Return: the address of the new element, or NULL if it fails
+*add_node - Adds a new node at the beginning of a liked lis
+*@head: Double pointer to the list_t list
+*@str: New string add the node
+*Return: The adress new element, NULL if fails
 */
 list_t *add_node(list_t **head, const char *str)
 {
