@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include "lists.h"
+
 size_t looped_listint_len(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
+
 /**
 *looped_listint_len - Counts the number of unique node
 *in a lopped listint-t linked list
@@ -24,7 +26,7 @@ while (hare)
 {
 if (tortoise == hare)
 {
-tortoise = hare;
+tortoise = head;
 while (tortoise != hare)
 {
 nodes++;
