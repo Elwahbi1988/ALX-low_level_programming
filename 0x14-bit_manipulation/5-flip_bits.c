@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*flip_bits - Counts the number of bits to change to get from one number to another
+*flip_bits - Counts number of bits to change get one number to another
 *@n: First number
 *@m: Second number
 *Return: number of bit to change
