@@ -236,14 +236,14 @@ int o, r;
 o = open(argv[1], O_RDONLY);
 if (o == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't reas file %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
 header = malloc(sizeof(Elf64_Ehdr));
 if (header == NULL)
 {
 close_elf(o);
-dprintf(STDERR_FILENO, "Error: Can't reas file %s\n", argv[1]);
+dprintf(STDERR_FILENO, "Error: Can't read file %s\n", argv[1]);
 exit(98);
 }
 r = read(o, header, sizeof(Elf64_Ehdr));
