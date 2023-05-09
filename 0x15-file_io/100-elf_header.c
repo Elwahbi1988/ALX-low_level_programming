@@ -6,7 +6,6 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-
 /**
 *check_elf - check file is elf file
 *@e_ident: Pointer an array content the elf magic number
@@ -25,6 +24,7 @@ exit(98);
 }
 }
 }
+
 /**
 *print_magic - print numbers magic of elf header
 *@e_ident: Pointer an array content the elf magic number
@@ -43,6 +43,7 @@ else
 printf(" ");
 }
 }
+
 /**
 *print_class - print class of elf header
 *@e_ident: Pointer an array content the elf class
@@ -65,6 +66,7 @@ default:
 printf("<unknow: %x>\n", e_ident[EI_CLASS]);
 }
 }
+
 /**
 *print_data - print  the data of elf header
 *@e_ident: pointer an array content the elf class
@@ -87,6 +89,7 @@ default:
 printf("<unknow: %x>\n", e_ident[EI_CLASS]);
 }
 }
+
 /**
 *print_version - print the version of elf header
 *@e_ident: Pointer an array content elf version
@@ -104,13 +107,14 @@ printf("\n");
 break;
 }
 }
+
 /**
-*print_osabi - printf os/abi of elf header
+*print_osabi- printf os/abi of elf header
 *@e_ident: Pointer an array content the elf version
 */
 void print_osabi(unsigned char *e_ident)
 {
-printf("OS/ABI:      ");
+printf("OS/ABI:        ");
 switch (e_ident[EI_OSABI])
 {
 case ELFOSABI_NONE:
@@ -147,14 +151,16 @@ default:
 printf("<unknown: %x>\n", e_ident[EI_OSABI]);
 }
 }
+
 /**
-*print_abiversion - print abi version of elf header
+*print_abi- print abi version of elf header
 *@e_ident: Pointer an array content the elf abi version
 */
-void print_abiversion(unsigned char *e_ident)
+void print_abi(unsigned char *e_ident)
 {
 printf("ABI Version: %d\n", e_ident[EI_ABIVERSION]);
 }
+
 /**
 *print_type - print type of elf header
 *@e_type: Type of elf
@@ -186,6 +192,7 @@ default:
 printf("<unknown: %x\n", e_type);
 }
 }
+
 /**
 *print_entry - prints the entry point of elf header
 *@e_ident: Pointer an array content the elf class
@@ -203,6 +210,7 @@ e_entry = (e_entry << 16) | (e_entry >> 16);
 else
 printf("%#lx\n", e_entry);
 }
+
 /**
 *close_elf - close file elf
 *@elf: File descriptor of file elf
@@ -213,6 +221,7 @@ void close_elf(int elf)
 dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", elf);
 exit(98);
 }
+
 /**
 *main - elf header in the information contained at the start elf file
 *@argc: Number of argument to the program
@@ -252,7 +261,7 @@ print_class(header->e_ident);
 print_data(header->e_ident);
 print_version(header->e_ident);
 print_osabi(header->e_ident);
-print_abiversion(header->e_ident);
+print_abi(header->e_ident);
 print_type(header->e_type, header->e_ident);
 print_entry(header->e_entry, header->e_ident);
 free(header);
