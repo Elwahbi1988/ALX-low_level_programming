@@ -170,4 +170,43 @@ printf(" ABI Version: %d\n", e_ident[EI_ABIVERSION]);
 *@e_type: Type of elf
 *@e_ident: Pointer an array content the elf class
 */
+void print_type(unsigned int e_type, unsigned char *e_ident)
+{
+if (e_ident[EI_DATA] == ELFDATA2MSB)
+e_type >>= 8;
+printf("Type:");
+switch (e_type)
+{
+case ET_NONE:
+printf("NONE (None)\n");
+break;
+case ET_REL:
+printf("REL (Relocatable file)\n");
+break;
+case ET_EXEC:
+printf("EXEC (Executable file)\n");
+break;
+case ET_DYN:
+printf("DYN (Shared object file)\n");
+break;
+case ET_CORE:
+printf("CORE (Core file)\n");
+break;
+default:
+printf("<unknown: %x\n", e_type);
+}
+}
+/**
+*print_entry - prints the entry point of elf header
+*@e_ident: Pointer an array content the elf class
+*@e_entry: Address of elf entry point
+*/
+void print_entry(unsigned long int e_entry, unsigned char *e_ident)
+{
+printf("Entry point address:");
+if (e_ident[EI_DATA] == ELFDATA2MSB)
+{
+e_entry = ((e_entry << 8) & 0xFF00FF00) | 
+((e_entry >> 8) & 0xFF00FF);
+:wq
 
