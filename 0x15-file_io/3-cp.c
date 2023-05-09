@@ -45,11 +45,11 @@ exit(100);
 */
 int main(int argc, char *argv[])
 {
-char *buffer;
 int to, from, r, w;
+char *buffer;
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: cp file_from file_to %s\n");
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 buffer = create_buffer(argv[2]);
